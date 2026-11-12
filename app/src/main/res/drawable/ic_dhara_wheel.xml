@@ -1,0 +1,181 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Outer Outer Ring -->
+    <path
+        android:fillColor="#F6C343"
+        android:pathData="M48,16 C65.67,16 80,30.33 80,48 C80,65.67 65.67,80 48,80 C30.33,80 16,65.67 16,48 C16,30.33 30.33,16 48,16 Z" />
+
+    <!-- Rim Cutout creating wheel rim band -->
+    <path
+        android:fillColor="#0D1B2A"
+        android:pathData="M48,22 C62.36,22 74,33.64 74,48 C74,62.36 62.36,74 48,74 C33.64,74 22,62.36 22,48 C22,33.64 33.64,22 48,22 Z" />
+
+    <!-- Inner Golden Rim -->
+    <path
+        android:fillColor="#E5A91E"
+        android:pathData="M48,24 C61.25,24 72,34.75 72,48 C72,61.25 61.25,72 48,72 C34.75,72 24,61.25 24,48 C24,34.75 34.75,24 48,24 Z" />
+
+    <path
+        android:fillColor="#0D1B2A"
+        android:pathData="M48,28 C59.05,28 68,36.95 68,48 C68,59.05 59.05,68 48,68 C36.95,68 28,59.05 28,48 C28,36.95 36.95,28 48,28 Z" />
+
+    <!-- 8 Outer Handles / Knobs with rounded finials -->
+    <!-- Top (0 deg) -->
+    <path
+        android:fillColor="#F6C343"
+        android:pathData="M46,8 L50,8 C51,8 51.5,9.5 51.5,11 L51.5,16 L44.5,16 L44.5,11 C44.5,9.5 45,8 46,8 Z" />
+    <path
+        android:fillColor="#FBD778"
+        android:pathData="M48,4 C50.2,4 52,5.8 52,8 C52,10.2 50.2,12 48,12 C45.8,12 44,10.2 44,8 C44,5.8 45.8,4 48,4 Z" />
+
+    <!-- Bottom (180 deg) -->
+    <path
+        android:fillColor="#D89912"
+        android:pathData="M46,88 L50,88 C51,88 51.5,86.5 51.5,80 L44.5,80 L44.5,86.5 C44.5,86.5 45,88 46,88 Z" />
+    <path
+        android:fillColor="#E5A91E"
+        android:pathData="M48,84 C50.2,84 52,85.8 52,88 C52,90.2 50.2,92 48,92 C45.8,92 44,90.2 44,88 C44,85.8 45.8,84 48,84 Z" />
+
+    <!-- Right (90 deg) -->
+    <path
+        android:fillColor="#F6C343"
+        android:pathData="M88,46 L88,50 C88,51 86.5,51.5 80,51.5 L80,44.5 L86.5,44.5 C86.5,44.5 88,45 88,46 Z" />
+    <path
+        android:fillColor="#FBD778"
+        android:pathData="M88,48 C88,45.8 89.8,44 92,44 C94.2,44 96,45.8 96,48 C96,50.2 94.2,52 92,52 C89.8,52 88,50.2 88,48 Z" />
+
+    <!-- Left (270 deg) -->
+    <path
+        android:fillColor="#D89912"
+        android:pathData="M8,46 L8,50 C8,51 9.5,51.5 16,51.5 L16,44.5 L9.5,44.5 C9.5,44.5 8,45 8,46 Z" />
+    <path
+        android:fillColor="#E5A91E"
+        android:pathData="M4,48 C4,45.8 5.8,44 8,44 C10.2,44 12,45.8 12,48 C12,50.2 10.2,52 8,52 C5.8,52 4,50.2 4,48 Z" />
+
+    <!-- Top-Right (45 deg) -->
+    <group android:pivotX="48" android:pivotY="48" android:rotation="45">
+        <path
+            android:fillColor="#F6C343"
+            android:pathData="M46,8 L50,8 C51,8 51.5,9.5 51.5,16 L44.5,16 L44.5,11 C44.5,9.5 45,8 46,8 Z" />
+        <path
+            android:fillColor="#FBD778"
+            android:pathData="M48,4 C50.2,4 52,5.8 52,8 C52,10.2 50.2,12 48,12 C45.8,12 44,10.2 44,8 C44,5.8 45.8,4 48,4 Z" />
+    </group>
+
+    <!-- Bottom-Right (135 deg) -->
+    <group android:pivotX="48" android:pivotY="48" android:rotation="135">
+        <path
+            android:fillColor="#D89912"
+            android:pathData="M46,8 L50,8 C51,8 51.5,9.5 51.5,16 L44.5,16 L44.5,11 C44.5,9.5 45,8 46,8 Z" />
+        <path
+            android:fillColor="#E5A91E"
+            android:pathData="M48,4 C50.2,4 52,5.8 52,8 C52,10.2 50.2,12 48,12 C45.8,12 44,10.2 44,8 C44,5.8 45.8,4 48,4 Z" />
+    </group>
+
+    <!-- Bottom-Left (225 deg) -->
+    <group android:pivotX="48" android:pivotY="48" android:rotation="225">
+        <path
+            android:fillColor="#D89912"
+            android:pathData="M46,8 L50,8 C51,8 51.5,9.5 51.5,16 L44.5,16 L44.5,11 C44.5,9.5 45,8 46,8 Z" />
+        <path
+            android:fillColor="#E5A91E"
+            android:pathData="M48,4 C50.2,4 52,5.8 52,8 C52,10.2 50.2,12 48,12 C45.8,12 44,10.2 44,8 C44,5.8 45.8,4 48,4 Z" />
+    </group>
+
+    <!-- Top-Left (315 deg) -->
+    <group android:pivotX="48" android:pivotY="48" android:rotation="315">
+        <path
+            android:fillColor="#F6C343"
+            android:pathData="M46,8 L50,8 C51,8 51.5,9.5 51.5,16 L44.5,16 L44.5,11 C44.5,9.5 45,8 46,8 Z" />
+        <path
+            android:fillColor="#FBD778"
+            android:pathData="M48,4 C50.2,4 52,5.8 52,8 C52,10.2 50.2,12 48,12 C45.8,12 44,10.2 44,8 C44,5.8 45.8,4 48,4 Z" />
+    </group>
+
+    <!-- 8 Elegant Pillars / Spokes extending from Hub to Rim -->
+    <!-- Vertical Spoke (0 / 180 deg) -->
+    <path
+        android:fillColor="#F6C343"
+        android:pathData="M46.2,26 L49.8,26 L49.8,48 L46.2,48 Z" />
+    <path
+        android:fillColor="#D89912"
+        android:pathData="M46.2,48 L49.8,48 L49.8,70 L46.2,70 Z" />
+
+    <!-- Spoke ornamental rings -->
+    <path
+        android:fillColor="#FBD778"
+        android:pathData="M45,34 L51,34 L51,36 L45,36 Z" />
+    <path
+        android:fillColor="#E5A91E"
+        android:pathData="M45,60 L51,60 L51,62 L45,62 Z" />
+
+    <!-- Horizontal Spoke (90 / 270 deg) -->
+    <path
+        android:fillColor="#F6C343"
+        android:pathData="M48,46.2 L70,46.2 L70,49.8 L48,49.8 Z" />
+    <path
+        android:fillColor="#D89912"
+        android:pathData="M26,46.2 L48,46.2 L48,49.8 L26,49.8 Z" />
+
+    <path
+        android:fillColor="#FBD778"
+        android:pathData="M60,45 L62,45 L62,51 L60,51 Z" />
+    <path
+        android:fillColor="#E5A91E"
+        android:pathData="M34,45 L36,45 L36,51 L34,51 Z" />
+
+    <!-- Diagonal Spoke 1 (45 / 225 deg) -->
+    <group android:pivotX="48" android:pivotY="48" android:rotation="45">
+        <path
+            android:fillColor="#F6C343"
+            android:pathData="M46.2,26 L49.8,26 L49.8,70 L46.2,70 Z" />
+        <path
+            android:fillColor="#FBD778"
+            android:pathData="M45,34 L51,34 L51,36 L45,36 Z" />
+        <path
+            android:fillColor="#E5A91E"
+            android:pathData="M45,60 L51,60 L51,62 L45,62 Z" />
+    </group>
+
+    <!-- Diagonal Spoke 2 (135 / 315 deg) -->
+    <group android:pivotX="48" android:pivotY="48" android:rotation="135">
+        <path
+            android:fillColor="#E5A91E"
+            android:pathData="M46.2,26 L49.8,26 L49.8,70 L46.2,70 Z" />
+        <path
+            android:fillColor="#FBD778"
+            android:pathData="M45,34 L51,34 L51,36 L45,36 Z" />
+        <path
+            android:fillColor="#D89912"
+            android:pathData="M45,60 L51,60 L51,62 L45,62 Z" />
+    </group>
+
+    <!-- Central Hub - Outer Ring -->
+    <path
+        android:fillColor="#E5A91E"
+        android:pathData="M48,34 C55.73,34 62,40.27 62,48 C62,55.73 55.73,62 48,62 C40.27,62 34,55.73 34,48 C34,40.27 40.27,34 48,34 Z" />
+
+    <!-- Central Hub - Inner Gold Disc -->
+    <path
+        android:fillColor="#F6C343"
+        android:pathData="M48,36 C54.63,36 60,41.37 60,48 C60,54.63 54.63,60 48,60 C41.37,60 36,54.63 36,48 C36,41.37 41.37,36 48,36 Z" />
+
+    <!-- Central Center Rim -->
+    <path
+        android:fillColor="#B77B09"
+        android:pathData="M48,40 C52.42,40 56,43.58 56,48 C56,52.42 52.42,56 48,56 C43.58,56 40,52.42 40,48 C40,43.58 43.58,40 48,40 Z" />
+
+    <!-- Spiral Emblem at the core of the hub (as in the provided Dharmachakra image) -->
+    <path
+        android:fillColor="#FBD778"
+        android:pathData="M48,42 C51.31,42 54,44.69 54,48 C54,51.31 51.31,54 48,54 C44.69,54 42,51.31 42,48 C42,44.69 44.69,42 48,42 Z" />
+    <path
+        android:fillColor="#0D1B2A"
+        android:strokeColor="#B77B09"
+        android:strokeWidth="1.2"
+        android:pathData="M48,48 C47,48 46,47 46,46 C46,44.5 47.5,43.5 49,44 C50.5,44.5 51.5,46 51.5,47.5 C51.5,50 49.5,51.5 47,51.5 C44,51.5 42.5,49 42.5,46.5" />
+</vector>

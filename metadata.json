@@ -1,0 +1,6 @@
+{
+  "name": "dhara",
+  "description": "Andhra Pradesh land-record discovery and ownership verification prototype.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
