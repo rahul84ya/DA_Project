@@ -1,36 +1,105 @@
-# dhara
+# Dhara – Project README
 
-dhara is a modern, accessible prop-tech Android application for Andhra Pradesh land-record discovery and ownership verification. Built with Kotlin and Jetpack Compose, the app provides guided location-based parcel lookup inspired by official record structures of Andhra Pradesh revenue services (MeeBhoomi / Webland) and APSAC cadastral GIS.
+**Team Name:** Dhara
+**Team Members:**
 
----
+| S.No | Name | Roll No. |
+|---|---|---|
+| 1 | Rahul Kumar Chaurasiya | 25CSB1A77 |
+| 2 | Pritkumar Gopalbhai Patel | 25CSB1A07 |
+| 3 | Ugyen Jigme Samphel | 25CSB1A79 |
+| 4 | G. Radhashyam | 25CSB1A47 |
+| 5 | Samareddi Nandha Vardhan Nihal | 25CSB1A58 |
+| 6 | J. Nikhil Nandhan | 25CSB1A57 |
 
-## 🏛️ Features Included
-
-1. **Land Record Search:**
-   - Guided, dependent selection hierarchy: District → Tahsil/Mandal → Village → Land Record Type → Survey Number.
-   - Downstream dropdowns remain disabled until prior choices are made.
-   - Record types supported: Adangal (Village Account No. 3), 1-B (Record of Rights), FMB Map, and E-Passbook.
-   - Action buttons: View Record, Download Summary, Report Discrepancy, and View on Map.
-
-2. **Ownership Check:**
-   - Dedicated ownership verification tab using the dependent revenue hierarchy.
-   - Mandatory user authorization consent check before verification.
-   - Displays Pattadar name, relationship, ownership classification, registered extent, and undivided share percentage.
-
-3. **Cadastral Survey Map (APSAC GIS):**
-   - Vector and GIS parcel boundary visualization using Andhra Pradesh Space Applications Centre (APSAC) spatial data.
-   - Interactive parcel selection, centroid details, and surrounding boundaries reference.
-
-4. **Official Portal Integration (MeeBhoomi):**
-   - Integrated user-controlled view of the official `meebhoomi.ap.gov.in` portal.
-   - Users interact directly with state government services without scraping or automated credential access.
-
-5. **Local Administrative Directory:**
-   - Fast, offline LGD-derived dataset snapshot covering all 28 Andhra Pradesh districts, 688 mandals, and 17,954 villages.
+**Repository:** https://github.com/rahul84ya/DA_Project.git
+**Deliverable:** Dhara Android application (`dhara.apk`)
 
 ---
 
-## 🛡️ Compliance & Privacy Notice
+## 1. Project Overview
 
-- **No Scraping:** This application strictly respects government service boundaries and does not automate CAPTCHA solving, crawling, or scraping.
-- **Informational Discovery:** Statutory legal transactions (mortgages, sales deeds, registered partitions) require certified extracts from the Sub-Registrar Office (Registration & Stamps Department) and the Mandal Revenue Officer (Tahsildar).
+Dhara is an Android mobile application built with a modern Kotlin / Jetpack Compose stack. Its package identifier (`com.aistudio.aplandverify.xqkt`) indicates it is aimed at land-record verification (AP = Andhra Pradesh), and it integrates Firebase services including generative-AI capabilities.
+
+> Please edit this section with 2-3 lines in your own words describing the problem your project solves.
+
+## 2. Problem Statement
+
+<Describe the problem: e.g., difficulty in verifying land records / ownership details, risk of fraud, manual and slow processes.>
+
+
+> Adjust this list to match the features actually implemented in your app.
+
+## 5. Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Platform | Android (APK) |
+| Language | Kotlin |
+| UI | Jetpack Compose, Material 3, Material Icons Extended |
+| Architecture / Lifecycle | AndroidX Lifecycle, Activity Compose |
+| Local Storage | Room |
+| Authentication | Google Sign-In (Play Services) |
+| Backend / Cloud | Firebase (Firebase AI, App Check) |
+| Build System | Gradle |
+
+## 6. App Details
+
+| Item | Value |
+|---|---|
+| App name | Dhara |
+| Package name | com.aistudio.aplandverify.xqkt |
+| Main activity | com.example.MainActivity |
+| Permissions | INTERNET, ACCESS_NETWORK_STATE |
+
+## 7. System Architecture
+
+```
+User  ->  Android App (Jetpack Compose UI)
+              |-- Room (local database)
+              |-- Google Sign-In (authentication)
+              |-- Firebase AI (AI features)
+              `-- Firebase App Check (security)
+```
+
+## 8. Installation & Setup
+
+### Install the APK
+1. Copy `dhara.apk` to an Android device.
+2. Enable **Install from unknown sources** in device settings.
+3. Open the APK and tap **Install**.
+
+### Build from Source
+```bash
+git clone https://github.com/rahul84ya/DA_Project.git
+cd DA_Project
+# Open in Android Studio, let Gradle sync, then Run
+```
+You will need your own `google-services.json` (Firebase) in the `app/` folder.
+
+## 9. How to Use
+
+1. Launch the Dhara app.
+2. Sign in with your Google account.
+3. <Describe the main workflow, e.g., enter land details / survey number and verify.>
+4. <View results / reports.>
+
+## 10. Folder Structure
+
+```
+DA_Project/
+|-- app/            # Android application source
+|-- build.gradle
+`-- README.md
+```
+> Update to match the actual repository layout.
+
+## 11. Future Enhancements
+
+- <Offline mode improvements>
+- <Multi-language support (Telugu / Hindi / English)>
+- <Additional data sources and reporting>
+
+## 12. Contact
+
+Team Dhara – Rahul Kumar Chaurasiya (25CSB1A77)
